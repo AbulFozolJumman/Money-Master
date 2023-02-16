@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/143b6c3c08.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main>
+        <section class="container mx-auto my-12">
+            <h1 class="text-teal-400 text-5xl text-center font-bold mb-12">Money Master <span id="dollar"><i class="fa-solid fa-sack-dollar text-yellow-400"></i></span></h1>
+            <div class="flex justify-center">
+                <div>
+                    <img src="images/Pexels Photo by Karolina Grabowska.png" alt="">
+                </div>
+                <div class="bg-gray-100 text-center ml-12 py-12">
+                    <h2 class="text-2xl font-bold mb-6">Income</h2>
+                    <p class="text-xl font-medium mb-6">Income: 
+                        <input id="income" class="text-center w-1/6 bg-gray-300 py-2" type="text" value="10000">
+                    </p>
+                    <h2 class="text-2xl font-bold mb-6">Expenses</h2>
+                    <p class="text-xl font-medium mb-4">Food: 
+                        <input id="food-expense" class="expenses text-center w-1/6 bg-gray-300 py-2" type="text" value="3000">
+                    </p>
+                    <p class="text-xl font-medium mb-4">Rent: 
+                        <input id="rent-expense" class="expenses text-center w-1/6 bg-gray-300 py-2" type="text" value="2000">
+                    </p>
+                    <p class="text-xl font-medium mb-4">Clothes: 
+                        <input id="cloth-expense" class="expenses text-center w-1/6 bg-gray-300 py-2" type="text" value="500">
+                    </p>
+                    <button id="calculate-btn" class="text-2xl font-bold mb-6 bg-teal-200 px-8 py-2">Calculate</button>
+                    <h2 class="text-2xl font-bold mb-2">Total Expenses: 
+                        <span id="total-expenses">00</span>
+                    </h2>
+                    <h2 class="text-2xl font-bold mb-6">Balance: 
+                        <span id="balance-after-expenses">00</span>
+                    </h2>
+                    <p class="text-xl font-medium mb-6">Save: 
+                        <input id="savings-percentage" class="text-center w-1/6 bg-gray-300 py-2" type="text" value="20"> 
+                        % 
+                        <button id="save-btn" class="bg-teal-200 px-8 py-2">Save</button>
+                    </p>
+                    <h2 class="text-2xl font-bold mb-2">Saving Amount: 
+                        <span id="saving-amount">00</span>
+                    </h2>
+                    <h2 class="text-2xl font-bold">Remaining Balance: 
+                        <span id="final-balance">00</span>
+                    </h2>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- JS File -->
+    <script src="js/index.js"></script>
+</body>
+</html>
